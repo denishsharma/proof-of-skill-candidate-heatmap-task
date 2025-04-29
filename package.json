@@ -1,0 +1,35 @@
+{
+  "name": "proof-of-skill-heatmap-chart-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.80.15",
+    "apexcharts": "^4.7.0",
+    "axios": "^1.9.0",
+    "effect": "^3.14.15",
+    "jotai": "^2.12.3",
+    "next": "15.3.1",
+    "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@iconify/json": "^2.2.333",
+    "@iconify/tailwind4": "^1.0.6",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

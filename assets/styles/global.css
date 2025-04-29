@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@plugin "@iconify/tailwind4";
+
+@theme default {
+  --default-font-family: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply h-dvh w-full flex flex-col overflow-hidden bg-white text-gray-950;
+  }
+
+  :root {
+    --x-scrollbar-color: var(--color-neutral-400);
+  }
+
+  *,
+  *::before,
+  *::after {
+    scrollbar-width: thin;
+    scrollbar-color: var(--x-scrollbar-color) transparent;
+  }
+}
