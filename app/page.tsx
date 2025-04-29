@@ -12,7 +12,7 @@ import { useCallback, useEffect } from "react";
 export default function Home() {
   const fetchSkills = useCallback(
     (id: string) => {
-      return CandidateService.use(_ => _.skills(id)).pipe(
+      return CandidateService.skills(id).pipe(
         Effect.tap(skills => {
           store.set(selectedCandidatesAtom, _ => {
             return [..._, id]
@@ -29,7 +29,7 @@ export default function Home() {
   )
 
   useEffect(() => {
-    CandidateService.use(_ => _.list()).pipe(
+    CandidateService.list().pipe(
       Effect.tap(list => {
         store.set(candidateListAtom, list)
       }),
