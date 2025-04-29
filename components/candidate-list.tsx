@@ -13,7 +13,7 @@ export default function CandidateList(props: CandidateListItemProps) {
 
   return (
     <>
-      {candidateList.map((item, index) => (
+      {candidateList.map((item) => (
         <CandidateListItem
           key={item.id}
           name={item.name}

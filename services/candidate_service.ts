@@ -21,6 +21,7 @@ export const CandidateSkillsSchema = Schema.Struct({
 export type CandidateSkills = typeof CandidateSkillsSchema.Type
 
 export default class CandidateService extends Effect.Service<CandidateService>()('@service/candidate', {
+  accessors: true,
   effect: Effect.gen(function* () {
     function list() {
       return Effect.gen(function* () {
